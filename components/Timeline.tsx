@@ -10,35 +10,35 @@ const timelineEvents = [
     date: '17 Juni 2025',
     title: 'Serangan Dimulai',
     description: 'Awal deteksi serangan DDoS terhadap sistem LPS dengan peningkatan trafik yang tidak normal',
-    intensity: 'low',
+    intensity: 'low' as const,
     icon: AlertTriangle
   },
   {
     date: '20-24 Juni 2025',
     title: 'Eskalasi Bertahap',
     description: 'Intensitas serangan meningkat secara bertahap dengan pola yang berubah-ubah untuk menghindari deteksi',
-    intensity: 'medium',
+    intensity: 'medium' as const,
     icon: TrendingUp
   },
   {
     date: '25 Juni 2025',
     title: 'Puncak Serangan',
     description: 'Intensitas mencapai puncak tertinggi dengan 34 juta serangan per detik dan trafik 960 Gbps',
-    intensity: 'critical',
+    intensity: 'critical' as const,
     icon: AlertTriangle
   },
   {
     date: '26 Juni - 2 Juli 2025',
     title: 'Serangan Berkelanjutan',
     description: 'Serangan terus berlanjut dengan intensitas bervariasi, sistem LPS tetap bertahan',
-    intensity: 'high',
+    intensity: 'high' as const,
     icon: TrendingUp
   },
   {
     date: '3 Juli 2025',
     title: 'Berakhir',
     description: 'Serangan mereda setelah total 2,5 miliar serangan dalam periode 17 hari',
-    intensity: 'low',
+    intensity: 'low' as const,
     icon: Calendar
   }
 ];
