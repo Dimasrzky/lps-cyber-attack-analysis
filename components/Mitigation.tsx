@@ -179,12 +179,64 @@ export default function Mitigation() {
           </div>
         </div>
 
-        {/* Investment Highlight */}
+        {/* Menurut Kami Section - EDIT MANUAL */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.9 }}
-          className="mt-12 bg-gradient-to-r from-green-900/20 to-emerald-900/20 border-2 border-green-500/30 rounded-2xl p-8"
+          className="mt-12 bg-gradient-to-r from-blue-900/20 to-purple-900/20 border-2 border-blue-500/30 rounded-2xl p-8"
+        >
+          <div className="flex items-center gap-4 mb-6">
+            <div className="bg-blue-500/20 p-4 rounded-xl">
+              <Users className="w-8 h-8 text-blue-400" />
+            </div>
+            <h3 className="text-3xl font-bold text-white">Menurut Kami</h3>
+          </div>
+          
+          {/* EDIT CONTENT DI BAWAH INI - Ganti dengan pendapat tim kamu */}
+          <div className="space-y-4 text-gray-300 leading-relaxed">
+            <p>
+              <strong className="text-blue-300">Analisis Tim:</strong> Serangan DDoS terhadap LPS Indonesia menunjukkan 
+              bahwa institusi keuangan critical infrastructure memerlukan pendekatan keamanan siber yang lebih proaktif 
+              dan berlapis. Intensitas 34 juta serangan per detik merupakan indikasi bahwa pelaku memiliki resources 
+              dan kapabilitas yang sangat sophisticated.
+            </p>
+            
+            <p>
+              <strong className="text-blue-300">Rekomendasi Prioritas:</strong> Berdasarkan analisis kami, tiga langkah 
+              prioritas yang perlu dilakukan adalah: (1) Implementasi advanced DDoS mitigation service dari provider 
+              cloud global, (2) Pengembangan backup infrastructure yang terpisah secara geografis, dan (3) Peningkatan 
+              kapasitas bandwidth minimal 3x dari peak traffic normal.
+            </p>
+            
+            <p>
+              <strong className="text-blue-300">Perspektif Jangka Panjang:</strong> Investasi Rp 300 miliar yang telah 
+              dilakukan LPS sejak 2021 menunjukkan komitmen serius terhadap keamanan siber. Namun, mengingat evolusi 
+              ancaman yang cepat, budget tahunan untuk cybersecurity perlu ditingkatkan minimal 20-30% untuk mengantisipasi 
+              serangan yang lebih canggih di masa depan.
+            </p>
+            
+            <p>
+              <strong className="text-blue-300">Kolaborasi Ekosistem:</strong> Kasus ini menekankan pentingnya kolaborasi 
+              antar institusi finansial dan koordinasi dengan BSSN. Sharing threat intelligence secara real-time dapat 
+              membantu deteksi dini dan respon cepat terhadap serangan serupa di institusi lain.
+            </p>
+            
+            {/* TAMBAHKAN PARAGRAF LAIN DI SINI SESUAI KEBUTUHAN */}
+            {/* 
+            <p>
+              <strong className="text-blue-300">Judul Poin:</strong> Isi pendapat kamu di sini...
+            </p>
+            */}
+          </div>
+        </motion.div>
+
+        {/* Investment Highlight */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 1.1 }}
+          className="mt-8 bg-gradient-to-r from-green-900/20 to-emerald-900/20 border-2 border-green-500/30 rounded-2xl p-8"
         >
           <div className="flex items-center gap-4 mb-4">
             <div className="bg-green-500/20 p-4 rounded-xl">
